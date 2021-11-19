@@ -74,5 +74,51 @@ namespace Aplicativo_CRUD
                 Console.Clear();
             }
         }
+        public static void UpdateUser(ref List<Users> Users)
+        {
+            string userChoice;
+            if (Users.Count != 0)
+            {
+                for (int i = 0; i < Users.Count; i++)
+                {
+                    Console.WriteLine($" {i + 1} - \n Name: {Users[i].name} \n Email: {Users[i].email} \n ");
+                }
+                Console.Write("What user do you want? ");
+                userChoice = Console.ReadLine();
+                int ChoiceToInt = int.Parse(userChoice) - 1;
+                Console.Write(Users.Count);
+                if (ChoiceToInt < Users.Count)
+                {
+                    string newName;
+                    string newEmail;
+                    string newPassword;
+                    string newAge;
+                    Console.Clear();
+                    Console.Write("What is the user new email? ");
+                    newEmail = Console.ReadLine();
+                    Users[ChoiceToInt].email = newEmail;
+                    Console.Write("What is the user new name? ");
+                    newName = Console.ReadLine();
+                    Users[ChoiceToInt].name = newName;
+                    Console.Write("What is the user new age? ");
+                    newAge = Console.ReadLine();
+                    Users[ChoiceToInt].age = newAge;
+                    Console.Write("What is the user new password? ");
+                    newPassword = Console.ReadLine();
+                    Users[ChoiceToInt].password = newPassword;
+                } else
+                {
+                    Console.Clear();
+                    Console.WriteLine("Numero Invalido!");
+                    Console.ReadLine();
+                }   
+            }
+            else
+            {
+                Console.WriteLine("There is no User!");
+                Console.ReadLine();
+                Console.Clear();
+            }
+        }
     }
 }

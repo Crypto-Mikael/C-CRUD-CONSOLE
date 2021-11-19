@@ -46,6 +46,10 @@ namespace Aplicativo_CRUD
                         Console.Clear();
                         break;
                     case "4":
+                        Console.Clear();
+                        Cases.UpdateUser(ref Users);
+                        Console.Clear();
+                        Interface(ref Users);
                         break;
                     case "5":
                         Console.Clear();
@@ -57,7 +61,6 @@ namespace Aplicativo_CRUD
                         Console.WriteLine(" ");
                         Interface(ref Users);
                         break;
-
                 }
             }
         }
