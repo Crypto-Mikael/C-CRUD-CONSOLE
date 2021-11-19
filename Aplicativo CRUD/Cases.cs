@@ -51,27 +51,19 @@ namespace Aplicativo_CRUD
                 string email;
                 Console.Write("What is the user email? ");
                 email = Console.ReadLine();
-                for (int i = 0; i < Users.Count; i++)
+                if (Users.Exists(users => users.email == email))
                 {
-                    if (Users[i].email == email)
-                    {
-                        Users.Remove(Users[i]);
-                        Console.WriteLine("User Removed! ");
-                        Console.ReadLine();
-                    }
-                    else
-                    {
-                        Console.Clear();
-                        Console.WriteLine("Email not found! ");
-                        Console.ReadLine();
-                        Console.Clear();
-                    };
+                    int index = Users.FindIndex(users => users.email == email);
+                    Users.Remove(Users[index]);
+                    Console.WriteLine("User Removed! ");
+                    Console.ReadLine();
+                    Console.Clear();
+                } else
+                {
+                    Console.WriteLine("Email not exists");
+                    Console.ReadLine();
+                    Console.Clear();
                 }
-            } else
-            {
-                Console.WriteLine("There is no User!");
-                Console.ReadLine();
-                Console.Clear();
             }
         }
         public static void UpdateUser(ref List<Users> Users)
