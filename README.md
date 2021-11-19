@@ -3,7 +3,7 @@
 
 # Boas vindas ao repositório do projeto CRUD em C#!
 
-Você como pessoa programadora modifica dados o tempo todos certo? Este projeto tudo sobre mecher com dados, nele eu pude fazer um CRUD completo usando apenas a liguagem C# 
+Você como pessoa programadora modifica dados o tempo todos certo? Este projeto tudo sobre mexer com dados, nele eu pude fazer um CRUD completo usando apenas a liguagem C# 
 .NET, e lógica de progamação.
 
 # Sumário
