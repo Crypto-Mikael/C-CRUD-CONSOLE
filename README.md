@@ -11,7 +11,6 @@ Você como pessoa programadora modifica dados o tempo todos certo? Este projeto 
 - [Habilidades](#habilidades)
 - [Oque foi desenvolvido](#desenvolvido)
 - [Agradecimentos](#agradecimentos)
-- [Redes](##redes)
 
 # Habilidades
 
