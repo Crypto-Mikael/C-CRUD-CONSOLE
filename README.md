@@ -22,5 +22,5 @@ Nesse projeto, eu utilizei:
   
   ---
   
-# O que foi desenvolvido
+# Desenvolvido
 ![Desktop-2021 11 18-22 32 19 05-1](https://user-images.githubusercontent.com/80548535/142547142-244709bf-999d-45e5-b90f-074e543cc73c.gif)
